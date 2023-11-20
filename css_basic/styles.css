@@ -10,7 +10,7 @@ main{
     flex: auto;
 }
 article{
-    flex: 1;
+    flex: 2;
     overflow-y: auto;
 }
 aside{
