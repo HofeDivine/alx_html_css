@@ -378,7 +378,7 @@
     flex-direction: row-reverse;
   }
   /* Section SERVICES ============================= */
-.section-services .row{
+.section-services .row {
     display: flex;
     flex-wrap: wrap;
 }
