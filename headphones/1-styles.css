@@ -111,7 +111,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 50%;
+    height: 48%;
     font-size: 12px;
     color: aliceblue;
     text-align: center;
@@ -121,7 +121,9 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 
+  
 }
+
 .downContainer .button {
     background-color: #FF6565;
     width: 150px;
@@ -142,15 +144,88 @@ justify-content: center;
 .button a {
   color: aliceblue;
 }
+.whatWeDo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: center;
+  height: 65vh;
+  position: relative;
+}
+.whatWeDo .down2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40vh;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  padding-left: 15%;
+  padding-right: 15%;
+
+  
+}
+.whatWeDo .down2 div {
+  display: flex; 
+  justify-content: space-evenly;
+  height: 30vh;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 0%;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 0%;
+ 
+}
+.whatWeDo .down2 div p {
+display: flex;
+justify-content: center;
+padding-left: 30px;
+}
+.whatWeDo .top2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  position: absolute;
+  top: 0;
+  height: 50vh;
+  width: 100%;
+  
+  
+}
+.whatWeDo .top2 h2 {
+  display: flex;
+  justify-content: center;
+position: absolute;
+left: 45%;
+top: 20%;
+}
+.whatWeDo .top2 p {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  display: flex;
+  text-align: center;
+  height: 40%;
+  margin-left:20%;
+  margin-right: 20%;
+}
 @media (max-width: 768px) {
- .topContainer .links {
+ .topContainer{
+  display: flex;
+  justify-content: center;
+ }
+ 
+  .topContainer .links {
   
 
-    display: none;
+  display: none;
     flex-direction: column;
     position: absolute;
-    left: 80px;
-    top: 20%;
+    justify-content: center;
+    top: 15%;
+    left: 50%;
     height: 15vh;
     color: aliceblue;
   
@@ -171,11 +246,55 @@ justify-content: center;
     display: flex;
     
 }
+#menu-toggle:checked + .burger-icon + .downContainer{
+  position: absolute;
+  top: 60%;
+
+}
 .downContainer{
+  height:100vh ;
   font-size: 15px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.downContainer .button{
+position: absolute;
+left: 20%;
+top: 60%;
+}
+.downContainer .up{
+  position: absolute;
+  top: 40%;
+}
+.downContainer .down{
+  position: absolute;
+  bottom: 2%;
 }
 }
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+.whatWeDo {
+  height: 100vh;
 
+}
+.whatWeDo .down2 {
+  display: flex;
+  flex-wrap: wrap;
 
-
+}
+.whatWeDo .down2 div {
+  width: 48%;
+}
+  }
+  @media only screen and (max-width:480px){
+    .whatWeDo .down2 {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .whatWeDo{
+      height: 100vh;
+    }
+  }
   
