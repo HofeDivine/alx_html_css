@@ -84,7 +84,7 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    height: 100vh;
+    height: 80vh;
     
   }
 .topContainer {
@@ -182,6 +182,7 @@ justify-content: center;
 display: flex;
 justify-content: center;
 padding-left: 30px;
+text-align: center;
 }
 .whatWeDo .top2 {
   display: flex;
@@ -210,6 +211,74 @@ top: 20%;
   height: 40%;
   margin-left:20%;
   margin-right: 20%;
+  
+}
+.our-results{
+    background-image: url(images/headphones_hero_2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 60vh;
+    display: flex;
+    
+    flex-direction: column;
+position: relative;
+
+}
+.our-results .top3 {
+padding-top: 5%;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+height: 40%;
+padding-left: 30%;
+padding-right: 30%;
+color: aliceblue;
+}
+.our-results .down3 {
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7%
+}
+.contact-us{
+    
+    padding-top: 5px;
+}
+.forms {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+position: relative;
+padding-top: 5px;
+}
+.forms .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    height: 50%;
+    width: 30%;
+    padding-top: 30px;
+    padding-left: 5%;
+    
+
+}
+.forms .button1 {
+    background-color: #FF6565;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    color: aliceblue;
+    position: absolute;
+    bottom: 10%;
+
+    
 }
 @media (max-width: 768px) {
  .topContainer{
@@ -289,14 +358,100 @@ position: relative;
 .whatWeDo .down2 div {
   width: 48%;
 }
-  }
-  @media only screen and (max-width:480px){
-    .whatWeDo .down2 {
-      display: flex;
-      flex-wrap: wrap;
+.our-results .down3{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.our-results .down3 div {
+    width: 48%;
+}
+.our-results {
+    height: 100vh;
+}
+.our-results .top3 {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 40%;
+    padding-left: 20%;
+    padding-right: 20%;
+    color: aliceblue;
     }
+    .our-results .down3 {
+        padding-left: 20%;
+        padding-right: 20%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10%
+    }
+  }
+
+  @media only screen and (max-width:480px){
     .whatWeDo{
-      height: 100vh;
+        height: 170vh;
+        position: relative;
+        
+      }
+    .whatWeDo .top2 p {
+        position: absolute;
+        top: 10%;
+        margin-left:7%;
+        margin-right: 10%;
+        
+        padding-top: 0%;
+        margin-top: 0%;
+    }
+    .whatWeDo .top2 h2 {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 1%;
+        left: 35%;
+    }
+    
+    .whatWeDo .down2 {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        bottom: 50%;
+        
+    }
+    .our-results{
+        height: 210vh;
+        position: relative;
+    }
+    .our-results .top3 {
+        padding-left: 20%;
+        height: 30%;
+        width: 100%;
+        
+    }
+.our-results .down3 {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 5%;
+
+}
+    .headerContainer{
+        height: 150vh;
+        
+      }
+    .downContainer {
+        height: 140vh;
+    }
+    .forms .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        height: 50%;
+        width: 60%;
+        padding-top: 30px;
+        padding-left: 0%;
     }
   }
   

@@ -310,11 +310,14 @@ top: 60%;
 @media only screen and (min-width: 480px) and (max-width: 768px) {
 .whatWeDo {
   height: 100vh;
+  position: relative;
 
 }
 .whatWeDo .down2 {
   display: flex;
   flex-wrap: wrap;
+  position: absolute;
+  bottom: 20%;
 
 }
 .whatWeDo .down2 div {
