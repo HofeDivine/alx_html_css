@@ -1,0 +1,535 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+figure,
+blockquote,
+fieldset,
+legend {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set default font size and line height */
+body {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Remove list styles (bullet points, numbers) */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Remove default styles on anchor links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Resetting styles for common form elements */
+button,
+input,
+select,
+textarea {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* Set a baseline for images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+  
+  
+  
+  a:hover {
+    color: #FF6565;
+  }
+  a:active {
+    color: #FF6565;
+  }
+  button:hover {
+    opacity: 0.9;
+  }
+  button:active {
+    opacity: 0.9;
+  }
+  @keyframes funAnimation {
+    0% {
+      transform: scale(1) rotate(0);
+      opacity: 1;
+    }
+    25% {
+      transform: scale(1.2) rotate(45deg);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1) rotate(90deg);
+      opacity: 0.6;
+    }
+    75% {
+      transform: scale(1.2) rotate(135deg);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1) rotate(180deg);
+      opacity: 1;
+    }
+  }
+  .whatWeDo:hover {
+    animation: funAnimation 2s infinite;
+  }
+  .our-results:hover {
+     animation: funAnimation 2s infinite;
+  }
+
+  /* Apply styles to the section */
+  .whatWeDo {
+    
+    background-color: #3498db; /* Blue color, you can change it to your desired color */
+    margin: 50px auto;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; /* Add smooth transition on hover */
+  }
+  .headerContainer {
+    background-image: url(images/headphones_hero_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 80vh;
+    
+  }
+.topContainer {
+     display: flex;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 100px;
+    padding-top: 30px;
+
+
+
+}
+.topContainer .links {
+   width: 300px;
+    display: flex;
+   justify-content: space-between;
+   color: aliceblue;
+} 
+.downContainer {
+    width: 50%;
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 48%;
+    font-size: 12px;
+    color: aliceblue;
+    text-align: center;
+}
+.downContainer .up {
+display: flex;
+flex-direction: column;
+justify-content: center;
+
+  
+}
+
+.downContainer .button {
+    background-color: #FF6565;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    position: absolute;
+    left: 40%;
+    bottom: 50%;
+    
+}
+.burger-icon {
+  display: none;
+  
+}
+#menu-toggle {
+  display: none;
+}
+.button a {
+  color: aliceblue;
+}
+.whatWeDo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: center;
+  height: 65vh;
+  position: relative;
+}
+.whatWeDo .down2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 40vh;
+  align-items: center;
+  position: absolute;
+  bottom: 0px;
+  padding-left: 15%;
+  padding-right: 15%;
+
+  
+}
+.whatWeDo .down2 div {
+  display: flex; 
+  justify-content: space-evenly;
+  height: 30vh;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 0%;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-bottom: 0%;
+ 
+}
+.whatWeDo .down2 div p {
+display: flex;
+justify-content: center;
+padding-left: 30px;
+text-align: center;
+}
+.whatWeDo .top2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  position: absolute;
+  top: 0;
+  height: 50vh;
+  width: 100%;
+  
+  
+}
+.whatWeDo .top2 h2 {
+  display: flex;
+  justify-content: center;
+position: absolute;
+left: 45%;
+top: 20%;
+}
+.whatWeDo .top2 p {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  display: flex;
+  text-align: center;
+  height: 40%;
+  margin-left:20%;
+  margin-right: 20%;
+  
+}
+.our-results{
+    background-image: url(images/headphones_hero_2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 60vh;
+    display: flex;
+    
+    flex-direction: column;
+position: relative;
+
+}
+.our-results .top3 {
+padding-top: 5%;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+height: 40%;
+padding-left: 30%;
+padding-right: 30%;
+color: aliceblue;
+}
+.our-results .down3 {
+    padding-left: 20%;
+    padding-right: 20%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10%
+}
+.contact-us{
+    
+    padding-top: 5px;
+}
+.forms {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+position: relative;
+padding-top: 5px;
+}
+.forms .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    height: 50%;
+    width: 30%;
+    padding-top: 30px;
+    padding-left: 5%;
+    
+
+}
+.forms .button1 {
+    background-color: #FF6565;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    color: aliceblue;
+    position: absolute;
+    bottom: 10%;
+
+    
+}
+.footer {
+    background-image: url(images/footer_background.svg);
+    height: 30vh;
+    position: relative;
+}
+.top4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 100px;
+    padding-top: 30px;
+}
+.down4 {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+}
+@media (max-width: 768px) {
+ .topContainer{
+  display: flex;
+  justify-content: center;
+ }
+ 
+  .topContainer .links {
+  
+
+  display: none;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    top: 15%;
+    left: 50%;
+    height: 15vh;
+    color: aliceblue;
+  
+  }
+
+  .burger-icon {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+  }
+
+  .headerContainer{
+    height: 150vh;
+    
+  }
+  #menu-toggle:checked + .burger-icon + .links {
+    display: flex;
+    
+}
+#menu-toggle:checked + .burger-icon + .downContainer{
+  position: absolute;
+  top: 60%;
+
+}
+.downContainer{
+  height:100vh ;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.downContainer .button{
+position: absolute;
+left: 20%;
+top: 60%;
+}
+.downContainer .up{
+  position: absolute;
+  top: 40%;
+}
+.downContainer .down{
+  position: absolute;
+  bottom: 2%;
+}
+.our-results {
+    position: relative;
+}
+.our-results .down3{
+position: absolute;
+bottom: 1%;
+
+padding-bottom: 5px;
+}
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+.whatWeDo {
+  height: 100vh;
+position: relative;
+}
+.whatWeDo .down2 {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 20%;
+
+}
+.whatWeDo .down2 div {
+  width: 48%;
+}
+.our-results {
+    height: 100vh;
+    position: relative;
+}
+.our-results .down3{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.our-results .down3 div {
+    width: 48%;
+
+}
+
+.our-results .top3 {
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 40%;
+    padding-left: 20%;
+    padding-right: 20%;
+    color: aliceblue;
+    }
+    .our-results .down3 {
+        padding-left: 20%;
+        padding-right: 20%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10%
+    }
+    .top4 {
+        padding-left: 3%;
+        padding-right: 5px;    
+    }
+}
+
+
+  @media only screen and (max-width:480px){
+    .whatWeDo{
+        height: 170vh;
+        position: relative;
+        
+      }
+    .whatWeDo .top2 p {
+        position: absolute;
+        top: 10%;
+        margin-left:7%;
+        margin-right: 10%;
+        
+        padding-top: 0%;
+        margin-top: 0%;
+    }
+    .whatWeDo .top2 h2 {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 1%;
+        left: 35%;
+    }
+    
+    .whatWeDo .down2 {
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        bottom: 50%;
+        
+    }
+    .our-results{
+        height: 210vh;
+        position: relative;
+    }
+    .our-results .top3 {
+        padding-left: 20%;
+        height: 30%;
+        width: 100%;
+        
+    }
+.our-results .down3 {
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    bottom: 5%;
+
+}
+    .headerContainer{
+        height: 150vh;
+        
+      }
+    .downContainer {
+        height: 140vh;
+    }
+    .forms .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        height: 50%;
+        width: 60%;
+        padding-top: 30px;
+        padding-left: 0%;
+    }
+    .top4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+  }
+  
